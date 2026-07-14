@@ -1,109 +1,132 @@
-````markdown
-# TechTide Summer Internship 2026
+# TechNova Solutions Website
 
-## Day 4 Assignment – Multi-Page Company Website (HTML Only)
-
-### Objective
-
-The objective of this assignment is to build a professional multi-page company website using **HTML only**. This project demonstrates the use of semantic HTML elements, page navigation, and organized website structure.
+A modern multi-page website developed using HTML5 and CSS3. This project represents a fictional IT company named TechNova Solutions and demonstrates a clean, responsive, and professional website layout.
 
 ---
 
-## Project Structure
+## Project Features
 
-```
-TechTide-Day4-Company-Website/
-│
-├── index.html
-├── about.html
-├── services.html
-├── contact.html
-├── README.md
-└── images/
-    └── logo.png
-```
-
----
-
-## Website Pages
-
-### Home (index.html)
-- Header
-- Navigation Bar
-- Hero Section
-- Company Introduction
-- Featured Services
-- Footer
-
-### About (about.html)
-- Company Overview
-- Mission
-- Vision
-- Team Members
-- Footer
-
-### Services (services.html)
-- Web Development
-- Graphic Design
-- Digital Marketing
-- Cloud Solutions
-- Footer
-
-### Contact (contact.html)
-- Contact Information
-- Office Address
-- Email
-- Phone Number
+- Home Page
+- About Page
+- Services Page
+- Contact Page
+- Responsive Design
+- Sticky Navigation Bar
+- Modern CSS Styling
 - Contact Form
-- Footer
-
----
-
-##  Semantic HTML Elements Used
-
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<article>`
-- `<footer>`
-- `<form>`
-
----
-
-## Features
-
-- Multi-page website
-- Semantic HTML structure
-- Working navigation links
-- Contact form
-- Organized project folder
-- Clean and properly indented code
-- HTML only (No CSS or JavaScript)
+- Responsive Images
+- Semantic HTML Structure
 
 ---
 
 ## Technologies Used
 
 - HTML5
+- CSS3
+- Google Fonts (Poppins)
 
 ---
 
-## Developed By
+## Project Structure
 
-**Mehak Sarwar**
-
-BS Computer Science Student
-
-TechTide Summer Internship 2026
+```
+TechNova-Solutions/
+│
+├── home.html
+├── about.html
+├── services.html
+├── contacts.html
+├── style.css
+├── logo.jpg
+└── README.md
+```
 
 ---
 
-## Learning Outcomes
+## Website Pages
 
-- Build a structured multi-page website
-- Use semantic HTML elements correctly
-- Connect multiple web pages using relative links
-- Organize project files professionally
-- Prepare a website ready for future CSS styling
-````
+### Home
+- Welcome Section
+- Company Introduction
+- Featured Services
+- Why Choose Us
+
+### About
+- Company Overview
+- Mission
+- Vision
+- Team Members
+
+### Services
+- Web Development
+- Graphic Design
+- Digital Marketing
+- Cloud Solutions
+
+### Contact
+- Company Information
+- Contact Form
+- Office Address
+- Email and Phone Number
+
+---
+
+## CSS Features
+
+- Gradient Header
+- Sticky Navigation
+- Responsive Layout
+- Card Style Sections
+- Hover Effects
+- Smooth Scrolling
+- Styled Forms
+- Responsive Images
+- Professional Buttons
+- Mobile Friendly Design
+
+---
+
+## How to Run
+
+1. Download or clone this repository.
+2. Keep all project files in the same folder.
+3. Open `home.html` in your web browser.
+
+---
+
+## Responsive Design
+
+This website is compatible with:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+## Learning Objectives
+
+This project demonstrates:
+
+- HTML5 Semantic Elements
+- CSS3 Styling
+- Responsive Web Design
+- Navigation System
+- Form Design
+- Modern User Interface
+- Multi-Page Website Development
+
+---
+
+## Author
+
+**Your Name**
+
+Web Developer
+
+---
+
+## License
+
+This project is created for educational and learning purposes.
