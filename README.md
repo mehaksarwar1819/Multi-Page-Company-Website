@@ -2,13 +2,13 @@
 
 ## Project Title
 
-TechNova Solutions is a modern multi-page company website developed using HTML5 and CSS3. The website demonstrates a clean, responsive, and professional layout for an IT services company.
+TechNova Solutions is a responsive multi-page company website developed using HTML5 and CSS3. This project demonstrates the implementation of CSS Flexbox to create modern, flexible, and responsive web layouts.
 
 ---
 
 ## Project Objective
 
-The objective of this project is to apply HTML5 and CSS3 concepts to build a responsive multi-page website. This version focuses on implementing the CSS Box Model, improving layout design, enhancing user interface components, and maintaining clean code organization.
+The objective of this project is to enhance the existing company website by implementing CSS Flexbox. The website has been redesigned with modern layouts, responsive sections, and improved user experience while maintaining a clean and professional design.
 
 ---
 
@@ -16,6 +16,7 @@ The objective of this project is to apply HTML5 and CSS3 concepts to build a res
 
 - HTML5
 - CSS3
+- CSS Flexbox
 - Google Fonts (Poppins)
 
 ---
@@ -29,108 +30,110 @@ TechNova-Solutions/
 ├── about.html
 ├── services.html
 ├── contacts.html
-├── style.css
+├── css/
+│   └── style.css
 ├── logo.jpg
 └── README.md
 ```
 
 ---
 
-## CSS Concepts Used
+## Flexbox Concepts Used
 
-- External CSS
-- CSS Box Model
-- Margin
-- Padding
-- Borders
-- Border Radius
-- Box Shadow
-- Width and Max-Width
-- Centered Layout
-- Card Design
-- Navigation Styling
-- Button Styling
-- Hover Effects
-- Responsive Design
-- Typography
-- Media Queries
-- CSS Transitions
-- CSS Transform
-- Linear Gradient
-- Flexbox Navigation
+The following CSS Flexbox properties have been implemented throughout the project:
+
+- display: flex
+- flex-direction
+- justify-content
+- align-items
+- gap
+- flex-wrap
+- flex-grow
+- flex-shrink
+- Responsive Media Queries
 
 ---
 
-## Features Added in Day 2
+## Features Implemented
 
-- Applied the CSS Box Model throughout the website.
-- Added proper margins and padding for better spacing.
-- Created a centered main content container using max-width.
-- Designed modern card layouts for services, team members, and featured content.
-- Added borders, border radius, padding, margins, and box shadows to all cards.
-- Styled buttons with background colors, rounded corners, hover effects, and pointer cursor.
-- Improved the navigation bar with better spacing, active page highlighting, and hover effects.
-- Designed a professional footer containing copyright information, contact details, and social media links.
-- Added responsive styling for desktop, tablet, and mobile devices.
-- Improved typography, alignment, and readability.
-- Organized CSS using comments for better code readability.
+### Navigation Bar
 
----
+- Responsive Flexbox navigation
+- Logo aligned to the left
+- Navigation links aligned to the right
+- Active page highlighting
+- Hover effects
+- Mobile-friendly navigation
 
-## Website Pages
+### Home Page
 
-### Home
-
-- Welcome Section
-- Company Introduction
+- Responsive Hero Section
+- Text and image aligned using Flexbox
 - Featured Services
-- Why Choose Us
+- Testimonials Section
+- Pricing Section
+- Call-to-Action Section
+- Professional Footer
 
-### About
+### About Page
 
-- Company Overview
-- Mission
-- Vision
-- Team Members
+- Company Introduction
+- Mission and Vision Cards
+- Team Members Section
+- Why Choose Us Section
+- Call-to-Action Section
 
-### Services
+### Services Page
 
-- Web Development
-- Graphic Design
-- Digital Marketing
-- Cloud Solutions
+- Responsive Service Cards
+- Four Professional Services
+- Service Buttons
+- Pricing Plans
+- Why Choose Our Services Section
+- Call-to-Action Section
 
-### Contact
+### Contact Page
 
-- Contact Information
+- Contact Information Cards
 - Contact Form
 - Office Address
-- Email
+- Email Information
 - Phone Number
+- Business Hours
+- Why Contact Us Section
 
 ---
 
-## Layout Features
+## CSS Features
 
-- Professional Gradient Header
-- Responsive Navigation Bar
-- Modern Content Cards
+- External CSS
+- CSS Flexbox Layout
+- Responsive Design
+- Modern Hero Section
+- Card Components
+- Hover Effects
+- CSS Transitions
+- Professional Buttons
+- Responsive Navigation
+- Multi-Column Footer
 - Responsive Images
-- Styled Contact Form
-- Interactive Buttons
-- Hover Animations
-- Professional Footer
-- Responsive Layout
+- Box Shadow
+- Border Radius
+- Gradient Backgrounds
 - Clean Typography
 
 ---
 
-## How to Run the Project
+## Responsive Design
 
-1. Download or clone this repository.
-2. Keep all project files in the same folder.
-3. Open `home.html` in any modern web browser.
-4. Navigate through the website using the navigation menu.
+The website is fully responsive and compatible with:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+Media Queries have been used to ensure proper responsiveness across different screen sizes.
 
 ---
 
@@ -138,31 +141,48 @@ TechNova-Solutions/
 
 This project demonstrates the following concepts:
 
-- HTML5 Semantic Elements
-- CSS Box Model
-- Layout Design
-- Responsive Web Design
-- Card Components
+- HTML5 Semantic Structure
+- CSS Flexbox
+- Responsive Layout Design
 - Navigation Design
-- Button Styling
-- Form Styling
+- Hero Section Design
+- Card-Based User Interface
+- Responsive Footer Layout
+- Modern CSS Styling
 - Hover Effects
 - CSS Transitions
-- CSS Transform
-- External CSS Organization
+- Media Queries
+- Professional Code Organization
+
+---
+
+## How to Run the Project
+
+1. Download or clone this repository.
+2. Extract the project folder if necessary.
+3. Keep all files and folders in their original locations.
+4. Open `home.html` in any modern web browser.
+5. Navigate through the website using the navigation menu.
+
+---
+
+## Project Pages
+
+- Home
+- About
+- Services
+- Contact
 
 ---
 
 ## Author
 
-Your Name
+**Your Name**
+
+Web Development Student
 
 ---
 
 ## License
 
-This project is created for educational purposes as part of the Day 2 Web Development Assignment.
-
-## License
-
-This project is created for educational and learning purposes.
+This project was developed for educational purposes as part of the Day 3 Web Development Assignment.
