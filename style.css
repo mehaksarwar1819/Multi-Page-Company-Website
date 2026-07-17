@@ -1,433 +1,536 @@
-/* ===================================================
-   TECHNOVA SOLUTIONS
-   DAY 3 - PROFESSIONAL FLEXBOX CSS
-   Author: Your Name
-=================================================== */
+/*======================================
+        TECHNOVA SOLUTIONS
+=======================================*/
 
-/* ===========================
-   GOOGLE FONT
-=========================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/* ===========================
-   CSS VARIABLES
-=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root{
 
-    --primary:#0d6efd;
-    --secondary:#004aad;
-    --dark:#1f2937;
-    --light:#ffffff;
-    --gray:#f4f6f9;
-    --text:#555;
-    --shadow:0 10px 25px rgba(0,0,0,.12);
-    --radius:15px;
-    --transition:.4s;
+--primary:#2563eb;
+--secondary:#1d4ed8;
+--accent:#06b6d4;
+--dark:#0f172a;
+--white:#ffffff;
+--light:#f8fafc;
+--gray:#e5e7eb;
+--text:#475569;
+
+--radius:15px;
+
+--shadow:0 10px 30px rgba(0,0,0,.12);
+
+--transition:.4s ease;
 
 }
 
-/* ===========================
-   RESET
-=========================== */
+/*=========================
+RESET
+=========================*/
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
 }
 
 html{
-    scroll-behavior:smooth;
+
+scroll-behavior:smooth;
+
 }
 
 body{
 
-    font-family:'Poppins',sans-serif;
-    background:#eef2f7;
-    color:#333;
-    line-height:1.8;
+font-family:'Poppins',sans-serif;
+
+background:var(--light);
+
+color:var(--text);
+
+line-height:1.8;
+
+overflow-x:hidden;
 
 }
 
-/* ===========================
-   GLOBAL
-=========================== */
-
 .container{
 
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
 
 }
 
 img{
 
-    max-width:100%;
-    display:block;
+max-width:100%;
+
+display:block;
 
 }
 
 a{
 
-    text-decoration:none;
+text-decoration:none;
 
 }
 
 ul{
 
-    list-style:none;
+list-style:none;
 
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/*=========================
+HEADER
+=========================*/
 
 header{
 
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:white;
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+color:white;
+
+padding-bottom:80px;
 
 }
 
-/* ===========================
-   NAVBAR
-=========================== */
+/*=========================
+NAVBAR
+=========================*/
 
 .navbar{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 0;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
 
 }
 
 .logo{
 
-    display:flex;
-    align-items:center;
-    gap:15px;
+display:flex;
+
+align-items:center;
+
+gap:15px;
 
 }
 
 .logo img{
 
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:white;
-    padding:5px;
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+background:white;
+
+padding:5px;
 
 }
 
 .logo h1{
 
-    font-size:32px;
+font-size:28px;
+
+color:white;
 
 }
 
 nav{
 
-    display:flex;
-    gap:20px;
-    align-items:center;
+display:flex;
+
+gap:20px;
 
 }
 
 nav a{
 
-    color:white;
-    padding:12px 18px;
-    border-radius:30px;
-    transition:var(--transition);
-    font-weight:500;
+color:white;
+
+font-weight:500;
+
+padding:10px 0;
+
+position:relative;
+
+transition:.4s;
 
 }
 
-nav a:hover{
+nav a::after{
 
-    background:white;
-    color:var(--primary);
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-5px;
+
+width:0;
+
+height:3px;
+
+background:white;
+
+transition:.4s;
 
 }
 
-nav a.active{
+nav a:hover::after,
 
-    background:white;
-    color:var(--primary);
+nav a.active::after{
+
+width:100%;
 
 }
 
-/* ===========================
-   HERO SECTION
-=========================== */
+/*=========================
+HERO
+=========================*/
 
 .hero{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
-    padding:80px 0;
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:60px;
+
+padding:80px 0;
 
 }
 
 .hero-text{
 
-    flex:1;
+flex:1;
 
 }
 
 .hero-text h2{
 
-    font-size:48px;
-    color:white;
-    margin-bottom:20px;
+font-size:52px;
+
+line-height:1.2;
+
+margin:20px 0;
+
+}
+
+.hero-text span{
+
+color:#fde047;
 
 }
 
 .hero-text p{
 
-    color:#f2f2f2;
-    margin-bottom:30px;
-    font-size:18px;
+font-size:18px;
+
+margin-bottom:30px;
 
 }
 
 .hero-image{
 
-    flex:1;
+flex:1;
 
 }
 
 .hero-image img{
 
-    width:100%;
-    border-radius:20px;
-    box-shadow:var(--shadow);
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+animation:float 4s ease-in-out infinite;
 
 }
 
-/* ===========================
-   BUTTON
-=========================== */
+/*=========================
+BUTTONS
+=========================*/
 
 .btn{
 
-    display:inline-block;
-    background:white;
-    color:var(--primary);
-    padding:14px 35px;
-    border-radius:50px;
-    transition:var(--transition);
-    font-weight:600;
+display:inline-block;
+
+background:white;
+
+color:var(--primary);
+
+padding:14px 35px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.4s;
 
 }
 
 .btn:hover{
 
-    transform:translateY(-5px);
-    background:#ffd43b;
+background:#fde047;
+
+transform:translateY(-5px);
 
 }
 
-/* ===========================
-   MAIN
-=========================== */
+.btn-outline{
 
-main{
+display:inline-block;
 
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
+margin-left:15px;
+
+padding:14px 35px;
+
+border:2px solid white;
+
+color:white;
+
+border-radius:50px;
+
+transition:.4s;
 
 }
 
-/* ===========================
-   SECTION
-=========================== */
+.btn-outline:hover{
+
+background:white;
+
+color:var(--primary);
+
+}
+/*======================================
+        SECTION TITLE
+=======================================*/
 
 section{
-    background:white;
-    padding:40px;
-    margin-bottom:40px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    padding:80px 0;
+
 }
 
 .section-title{
 
     text-align:center;
+
     margin-bottom:50px;
 
 }
 
 .section-title h2{
 
-    font-size:36px;
-    color:var(--primary);
+    font-size:38px;
+
+    color:var(--dark);
+
+    margin-bottom:10px;
 
 }
 
 .section-title p{
 
+    color:var(--text);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/*======================================
+        STATISTICS
+=======================================*/
+
+.stats{
+
+    background:white;
+
+}
+
+.stats-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-card h2{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+.stat-card p{
+
     margin-top:10px;
 
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/*======================================
+        SERVICES
+=======================================*/
 
-@media(max-width:992px){
+.services-grid{
 
-.hero{
+    display:grid;
 
-flex-direction:column;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-}
-
-.navbar{
-
-flex-direction:column;
-gap:20px;
-
-}
-
-nav{
-
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.hero-text h2{
-
-font-size:34px;
-
-}
-
-.logo h1{
-
-font-size:24px;
-
-}
-
-nav{
-
-flex-direction:column;
-width:100%;
-
-}
-
-nav a{
-
-width:100%;
-text-align:center;
-
-}
-
-}
-/* ===========================
-   SERVICES
-=========================== */
-
-.services-container{
-
-    display:flex;
-    flex-wrap:wrap;
     gap:30px;
-    justify-content:center;
 
 }
 
 .service-card{
 
-    flex:1 1 250px;
     background:white;
+
     padding:30px;
+
     border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    text-align:center;
 
 }
 
 .service-card:hover{
 
     transform:translateY(-10px);
-    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+.service-card .icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
 
 }
 
 .service-card h3{
 
     color:var(--primary);
+
     margin-bottom:15px;
 
 }
 
 .service-card p{
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
 
-.service-card .btn{
+/*======================================
+        WHY CHOOSE US
+=======================================*/
 
-    background:var(--primary);
-    color:white;
+.why-us{
+
+    background:#f8fafc;
 
 }
 
-.service-card .btn:hover{
-
-    background:var(--secondary);
-
-}/* ===========================
-   TEAM
-=========================== */
+/*======================================
+        TEAM
+=======================================*/
 
 .team-container{
 
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
     gap:30px;
-    justify-content:center;
 
 }
 
 .team-card{
 
-    flex:1 1 250px;
     background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
+
     text-align:center;
-    transition:.4s;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
 
 }
 
 .team-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
 }
 
 .team-card img{
 
-    width:150px;
-    height:150px;
+    width:140px;
+
+    height:140px;
+
     border-radius:50%;
-    margin:30px auto 20px;
+
+    margin:auto;
+
+    margin-bottom:20px;
 
 }
 
@@ -435,133 +538,232 @@ text-align:center;
 
     color:var(--primary);
 
+    margin-bottom:10px;
+
 }
 
 .team-card h4{
 
     color:#777;
-    margin:10px 0;
+
+    margin-bottom:15px;
 
 }
-
-.team-card p{
-
-    padding:0 20px 30px;
-
-}/* ===========================
-   TESTIMONIALS
-=========================== */
+/*======================================
+        TESTIMONIALS
+=======================================*/
 
 .testimonials{
 
-    display:flex;
-    flex-wrap:wrap;
-    gap:25px;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 
 }
 
 .testimonial{
 
-    flex:1 1 300px;
     background:white;
     padding:30px;
     border-radius:15px;
     box-shadow:var(--shadow);
-    transition:.4s;
+    transition:var(--transition);
+    text-align:center;
 
 }
 
 .testimonial:hover{
 
-    transform:scale(1.03);
+    transform:translateY(-10px);
 
 }
 
 .testimonial h3{
 
-    color:var(--primary);
+    color:#fbbf24;
+    font-size:22px;
     margin-bottom:15px;
 
-}/* ===========================
-   PRICING
-=========================== */
+}
+
+.testimonial h4{
+
+    color:var(--primary);
+    margin-top:20px;
+
+}
+
+/*======================================
+        PRICING
+=======================================*/
 
 .pricing{
 
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
-    justify-content:center;
 
 }
 
 .price-card{
 
-    flex:1 1 280px;
     background:white;
-    border-radius:15px;
     text-align:center;
-    padding:35px;
+    padding:40px 30px;
+    border-radius:15px;
     box-shadow:var(--shadow);
-    transition:.4s;
+    transition:var(--transition);
+    position:relative;
 
 }
 
 .price-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
 }
 
-.price-card h2{
+.featured{
 
-    color:var(--primary);
+    border:3px solid var(--primary);
+
+}
+
+.popular{
+
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--primary);
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
 
 }
 
 .price{
 
-    font-size:42px;
-    color:var(--secondary);
+    font-size:45px;
+    color:var(--primary);
     margin:20px 0;
 
 }
 
 .price-card ul{
 
-    margin:20px 0;
+    margin:25px 0;
 
 }
 
 .price-card li{
 
-    margin:12px 0;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
 
-}/* ===========================
-   CTA
-=========================== */
+}
+
+/*======================================
+        CONTACT FORM
+=======================================*/
+
+form{
+
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+
+}
+
+form label{
+
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+form input,
+form textarea{
+
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+form input:focus,
+form textarea:focus{
+
+    border-color:var(--primary);
+
+}
+
+form input[type="submit"],
+form input[type="reset"]{
+
+    width:auto;
+    margin-top:25px;
+    margin-right:15px;
+    cursor:pointer;
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:50px;
+
+}
+
+form input[type="reset"]{
+
+    background:#64748b;
+
+}
+
+form input[type="submit"]:hover{
+
+    background:var(--secondary);
+
+}
+
+form input[type="reset"]:hover{
+
+    background:#475569;
+
+}
+
+/*======================================
+        CALL TO ACTION
+=======================================*/
 
 .cta{
 
     background:linear-gradient(135deg,var(--primary),var(--secondary));
     color:white;
-    padding:70px;
     text-align:center;
+    padding:70px 30px;
     border-radius:20px;
 
 }
 
 .cta h2{
 
-    color:white;
+    font-size:40px;
     margin-bottom:20px;
 
 }
 
 .cta p{
 
-    margin-bottom:30px;
+    max-width:700px;
+    margin:0 auto 30px;
 
 }
 
@@ -570,89 +772,277 @@ text-align:center;
     background:white;
     color:var(--primary);
 
-}/* ===========================
-   FOOTER
-=========================== */
+}
+
+.cta .btn:hover{
+
+    background:#fde047;
+
+}
+/*======================================
+            FOOTER
+======================================*/
 
 footer{
 
-    background:#111827;
+    background:#0f172a;
     color:white;
-    padding:60px 0;
+    padding:60px 0 20px;
 
 }
 
 .footer-container{
 
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:40px;
-
-}
-
-.footer-column{
-
-    flex:1 1 220px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:35px;
 
 }
 
 .footer-column h3{
 
-    color:#ffd43b;
     margin-bottom:20px;
+    color:#38bdf8;
+
+}
+
+.footer-column p{
+
+    margin-bottom:10px;
+    color:#cbd5e1;
 
 }
 
 .footer-column a{
 
-    color:#ddd;
     display:block;
+    color:#cbd5e1;
     margin:10px 0;
+    transition:.3s;
 
 }
 
 .footer-column a:hover{
 
     color:white;
+    padding-left:8px;
 
 }
 
 .footer-bottom{
 
+    border-top:1px solid rgba(255,255,255,.15);
     text-align:center;
     margin-top:40px;
-    border-top:1px solid rgba(255,255,255,.2);
     padding-top:20px;
+    color:#cbd5e1;
 
-}/* ===========================
-   RESPONSIVE
-=========================== */
+}
+
+/*======================================
+            ANIMATIONS
+======================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-text,
+.service-card,
+.team-card,
+.testimonial,
+.price-card,
+.stat-card{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.service-card img,
+.team-card img,
+.hero-image img{
+
+    transition:.4s;
+
+}
+
+.service-card:hover img,
+.team-card:hover img,
+.hero-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*======================================
+            RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-text h2{
+
+    font-size:42px;
+
+}
+
+}
 
 @media(max-width:768px){
 
-.services-container,
-.team-container,
-.pricing,
-.testimonials,
-.footer-container{
+.navbar{
 
-flex-direction:column;
+    flex-direction:column;
+    gap:20px;
 
 }
 
-.service-card,
-.team-card,
-.price-card,
-.testimonial{
+nav{
 
-width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
 
 }
 
-.cta{
+.logo h1{
 
-padding:40px 20px;
+    font-size:24px;
+
+}
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero-text h2{
+
+    font-size:34px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+.btn,
+.btn-outline{
+
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:10px 0;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.container{
+
+    width:95%;
+
+}
+
+.hero-text h2{
+
+    font-size:28px;
+
+}
+
+.logo img{
+
+    width:45px;
+    height:45px;
+
+}
+
+.logo h1{
+
+    font-size:20px;
+
+}
+
+.price{
+
+    font-size:36px;
+
+}
+
+.stat-card h2{
+
+    font-size:34px;
+
+}
+
+form{
+
+    padding:25px;
 
 }
 
