@@ -245,25 +245,7 @@ Through this project, I learned:
 
 ## Author
 
-**Student Name:** ___________________
-
-**Roll Number:** ___________________
-
-**Course:** Web Development
-
-**Assignment:** Week 3 – Day 1 Tailwind CSS
-
----
-
-## GitHub Repository
-
-Repository Link:
-
-https://github.com/yourusername/TechNova-Solutions
-
-(Replace the above link with your actual GitHub repository.)
-
----
+**Student Name:** Mehak Sarwwar
 
 ## License
 
