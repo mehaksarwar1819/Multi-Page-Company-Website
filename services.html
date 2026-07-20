@@ -8,186 +8,94 @@
 
 <title>Services | TechNova Solutions</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body>
+<body class="bg-slate-50 font-sans">
 
-<header>
+<!-- ================= NAVBAR ================= -->
 
-<div class="container navbar">
+<header class="bg-slate-900 text-white sticky top-0 shadow-lg z-50">
 
-<div class="logo">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
-<img src="logo.jpg" alt="Logo">
+<div class="flex items-center gap-3">
 
-<h1>TechNova Solutions</h1>
+<img src="images/logo.png" class="w-12 h-12 rounded-full">
+
+<h1 class="text-2xl font-bold">
+
+TechNova Solutions
+
+</h1>
 
 </div>
 
 <nav>
 
-<a href="home.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html" class="active">Services</a>
-<a href="contacts.html">Contact</a>
+<ul class="flex gap-8">
+
+<li><a href="home.html" class="hover:text-cyan-400 duration-300">Home</a></li>
+
+<li><a href="about.html" class="hover:text-cyan-400 duration-300">About</a></li>
+
+<li><a href="services.html" class="text-cyan-400">Services</a></li>
+
+<li><a href="contacts.html" class="hover:text-cyan-400 duration-300">Contact</a></li>
+
+</ul>
 
 </nav>
 
 </div>
 
-<section class="hero">
+</header>
 
-<div class="container hero">
+<!-- ================= HERO ================= -->
 
-<div class="hero-text">
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
 
-<span>Our Services</span>
+<div class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
 
-<h2>Professional Digital Solutions For Your Business</h2>
+<div>
 
-<p>
+<h2 class="text-5xl font-bold leading-tight mb-6">
 
-We provide complete IT services including web development,
-mobile applications, cloud solutions and digital marketing.
+Professional
+
+<span class="text-yellow-300">
+
+IT Services
+
+</span>
+
+For Every Business
+
+</h2>
+
+<p class="text-lg mb-8">
+
+We provide complete digital solutions including web development,
+mobile applications, cloud computing, cybersecurity and digital marketing.
 
 </p>
 
-<a href="contacts.html" class="btn">
+<a href="contacts.html"
 
-Get Started
+class="bg-white text-blue-700 px-7 py-3 rounded-full font-semibold hover:bg-yellow-300 duration-300">
+
+Get Free Consultation
 
 </a>
 
 </div>
 
-<div class="hero-image">
+<div>
 
-<img src="logo.jpg" alt="Services">
+<img src="images/service-hero.jpg"
 
-</div>
-
-</div>
-
-</section>
-
-</header>
-
-<main>
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Services</h2>
-
-<p>
-
-Explore our wide range of professional technology solutions.
-
-</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-
-<div class="icon">💻</div>
-
-<h3>Web Development</h3>
-
-<p>
-
-Modern responsive websites built using
-latest technologies.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">📱</div>
-
-<h3>Mobile Apps</h3>
-
-<p>
-
-Android and iOS applications
-with clean user interfaces.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">🎨</div>
-
-<h3>Graphic Design</h3>
-
-<p>
-
-Creative logos, branding,
-posters and social media designs.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">📈</div>
-
-<h3>Digital Marketing</h3>
-
-<p>
-
-SEO, Google Ads,
-Social Media Marketing.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">☁️</div>
-
-<h3>Cloud Solutions</h3>
-
-<p>
-
-Secure cloud hosting,
-backup and deployment services.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">🔒</div>
-
-<h3>Cyber Security</h3>
-
-<p>
-
-Protect your business
-with modern security solutions.
-
-</p>
-
-</div>
+class="rounded-2xl shadow-2xl">
 
 </div>
 
@@ -195,32 +103,247 @@ with modern security solutions.
 
 </section>
 
-<section>
+<!-- ================= SERVICES ================= -->
 
-<div class="container">
+<section class="py-20">
 
-<div class="section-title">
+<div class="max-w-7xl mx-auto px-6">
 
-<h2>Our Working Process</h2>
+<div class="text-center mb-14">
 
-<p>
+<h2 class="text-4xl font-bold">
 
-Simple and professional process
-for every project.
+Our Services
+
+</h2>
+
+<p class="text-gray-600 mt-3">
+
+Complete IT solutions for startups, businesses and enterprises.
 
 </p>
 
 </div>
 
-<div class="services-grid">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<div class="service-card">
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
 
-<div class="icon">1️⃣</div>
+<div class="text-5xl mb-5">
 
-<h3>Planning</h3>
+💻
 
-<p>
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Web Development
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+Responsive business websites using modern technologies.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+<div class="text-5xl mb-5">
+
+📱
+
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Mobile Apps
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+Android and iOS application development for all businesses.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+<div class="text-5xl mb-5">
+
+☁️
+
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Cloud Solutions
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+Secure cloud hosting, backup and deployment services.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+<div class="text-5xl mb-5">
+
+📈
+
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Digital Marketing
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+SEO, Google Ads and complete social media marketing.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+<div class="text-5xl mb-5">
+
+🎨
+
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+UI / UX Design
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+Creative and user-friendly interface design for websites.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+<div class="text-5xl mb-5">
+
+🔒
+
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Cyber Security
+
+</h3>
+
+<p class="text-gray-600 mb-6">
+
+Protect your business with secure digital infrastructure.
+
+</p>
+
+<a href="contacts.html"
+
+class="text-blue-700 font-semibold hover:text-cyan-500">
+
+Learn More →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROCESS ================= -->
+
+<section class="py-20 bg-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-14">
+
+<h2 class="text-4xl font-bold">
+
+Our Working Process
+
+</h2>
+
+<p class="text-gray-600 mt-3">
+
+Simple, transparent and efficient development process.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<div class="bg-slate-50 rounded-xl p-8 shadow text-center">
+
+<h2 class="text-5xl font-bold text-blue-700 mb-4">1</h2>
+
+<h3 class="text-xl font-bold mb-3">Planning</h3>
+
+<p class="text-gray-600">
 
 Understanding client requirements.
 
@@ -228,41 +351,41 @@ Understanding client requirements.
 
 </div>
 
-<div class="service-card">
+<div class="bg-slate-50 rounded-xl p-8 shadow text-center">
 
-<div class="icon">2️⃣</div>
+<h2 class="text-5xl font-bold text-blue-700 mb-4">2</h2>
 
-<h3>Design</h3>
+<h3 class="text-xl font-bold mb-3">Design</h3>
 
-<p>
+<p class="text-gray-600">
 
-Creating attractive UI/UX designs.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<div class="icon">3️⃣</div>
-
-<h3>Development</h3>
-
-<p>
-
-Building secure and scalable solutions.
+Creating attractive UI/UX.
 
 </p>
 
 </div>
 
-<div class="service-card">
+<div class="bg-slate-50 rounded-xl p-8 shadow text-center">
 
-<div class="icon">4️⃣</div>
+<h2 class="text-5xl font-bold text-blue-700 mb-4">3</h2>
 
-<h3>Launch</h3>
+<h3 class="text-xl font-bold mb-3">Development</h3>
 
-<p>
+<p class="text-gray-600">
+
+Building high-quality products.
+
+</p>
+
+</div>
+
+<div class="bg-slate-50 rounded-xl p-8 shadow text-center">
+
+<h2 class="text-5xl font-bold text-blue-700 mb-4">4</h2>
+
+<h3 class="text-xl font-bold mb-3">Launch</h3>
+
+<p class="text-gray-600">
 
 Testing, deployment and support.
 
@@ -277,40 +400,57 @@ Testing, deployment and support.
 </section>
 <!-- ================= PRICING ================= -->
 
-<section>
+<section class="py-20 bg-slate-100">
 
-<div class="container">
+<div class="max-w-7xl mx-auto px-6">
 
-<div class="section-title">
+<div class="text-center mb-14">
 
-<h2>Our Pricing Plans</h2>
+<h2 class="text-4xl font-bold">
 
-<p>
+Our Pricing
 
-Choose the package that fits your business needs.
+</h2>
+
+<p class="text-gray-600 mt-3">
+
+Choose the package that best suits your business.
 
 </p>
 
 </div>
 
-<div class="pricing">
+<div class="grid md:grid-cols-3 gap-8">
 
-<div class="price-card">
+<div class="bg-white rounded-xl shadow-lg p-8 text-center hover:-translate-y-2 duration-300">
 
-<h2>Basic</h2>
+<h3 class="text-2xl font-bold mb-4">
 
-<div class="price">$99</div>
+Basic
 
-<ul>
+</h3>
 
-<li>✔ 5 Page Website</li>
-<li>✔ Responsive Design</li>
-<li>✔ Basic SEO</li>
-<li>✔ Email Support</li>
+<h2 class="text-5xl font-bold text-blue-700 mb-6">
+
+$199
+
+</h2>
+
+<ul class="space-y-3 text-gray-600 mb-8">
+
+<li>✔ Responsive Website</li>
+
+<li>✔ 5 Pages</li>
+
+<li>✔ Contact Form</li>
+
+<li>✔ Free Support</li>
 
 </ul>
 
-<a href="contacts.html" class="btn">
+<a href="contacts.html"
+
+class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-cyan-500 duration-300">
 
 Choose Plan
 
@@ -318,28 +458,41 @@ Choose Plan
 
 </div>
 
-<div class="price-card featured">
+<div class="bg-blue-700 text-white rounded-xl shadow-2xl p-8 text-center scale-105">
 
-<span class="popular">
+<span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm">
 
 Most Popular
 
 </span>
 
-<h2>Standard</h2>
+<h3 class="text-2xl font-bold mt-5 mb-4">
 
-<div class="price">$199</div>
+Professional
 
-<ul>
+</h3>
 
-<li>✔ Business Website</li>
-<li>✔ SEO Optimization</li>
-<li>✔ Speed Optimization</li>
-<li>✔ Priority Support</li>
+<h2 class="text-5xl font-bold mb-6">
+
+$499
+
+</h2>
+
+<ul class="space-y-3 mb-8">
+
+<li>✔ 10+ Pages</li>
+
+<li>✔ Admin Panel</li>
+
+<li>✔ SEO Optimized</li>
+
+<li>✔ 6 Months Support</li>
 
 </ul>
 
-<a href="contacts.html" class="btn">
+<a href="contacts.html"
+
+class="bg-white text-blue-700 px-6 py-3 rounded-full hover:bg-yellow-300 duration-300">
 
 Choose Plan
 
@@ -347,24 +500,37 @@ Choose Plan
 
 </div>
 
-<div class="price-card">
+<div class="bg-white rounded-xl shadow-lg p-8 text-center hover:-translate-y-2 duration-300">
 
-<h2>Premium</h2>
+<h3 class="text-2xl font-bold mb-4">
 
-<div class="price">$399</div>
+Enterprise
 
-<ul>
+</h3>
 
-<li>✔ Custom Website</li>
+<h2 class="text-5xl font-bold text-blue-700 mb-6">
+
+Custom
+
+</h2>
+
+<ul class="space-y-3 text-gray-600 mb-8">
+
+<li>✔ Unlimited Pages</li>
+
+<li>✔ Custom Software</li>
+
 <li>✔ Cloud Hosting</li>
+
 <li>✔ 24/7 Support</li>
-<li>✔ Digital Marketing</li>
 
 </ul>
 
-<a href="contacts.html" class="btn">
+<a href="contacts.html"
 
-Choose Plan
+class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-cyan-500 duration-300">
+
+Contact Us
 
 </a>
 
@@ -378,71 +544,61 @@ Choose Plan
 
 <!-- ================= FAQ ================= -->
 
-<section>
+<section class="py-20 bg-white">
 
-<div class="container">
+<div class="max-w-5xl mx-auto px-6">
 
-<div class="section-title">
+<h2 class="text-4xl font-bold text-center mb-12">
 
-<h2>Frequently Asked Questions</h2>
+Frequently Asked Questions
 
-<p>
+</h2>
 
-Some common questions from our clients.
+<div class="space-y-6">
 
-</p>
+<div class="bg-slate-50 p-6 rounded-xl shadow">
 
-</div>
+<h3 class="text-xl font-bold mb-2">
 
-<div class="services-grid">
+Do you build responsive websites?
 
-<div class="service-card">
+</h3>
 
-<h3>How long does a website take?</h3>
+<p class="text-gray-600">
 
-<p>
-
-Most websites are completed within
-1–3 weeks depending on requirements.
+Yes, all our websites are fully responsive and work perfectly on desktop, tablet and mobile devices.
 
 </p>
 
 </div>
 
-<div class="service-card">
+<div class="bg-slate-50 p-6 rounded-xl shadow">
 
-<h3>Do you provide support?</h3>
+<h3 class="text-xl font-bold mb-2">
 
-<p>
+How long does a project take?
 
-Yes, we provide technical support
-after project completion.
+</h3>
 
-</p>
+<p class="text-gray-600">
 
-</div>
-
-<div class="service-card">
-
-<h3>Can you redesign existing websites?</h3>
-
-<p>
-
-Yes, we can modernize and improve
-your existing website.
+Most projects are completed within 2–6 weeks depending on the requirements.
 
 </p>
 
 </div>
 
-<div class="service-card">
+<div class="bg-slate-50 p-6 rounded-xl shadow">
 
-<h3>Do you offer SEO services?</h3>
+<h3 class="text-xl font-bold mb-2">
 
-<p>
+Do you provide maintenance?
 
-Yes, we provide complete SEO and
-digital marketing solutions.
+</h3>
+
+<p class="text-gray-600">
+
+Yes, we provide maintenance and technical support after project delivery.
 
 </p>
 
@@ -456,22 +612,27 @@ digital marketing solutions.
 
 <!-- ================= CTA ================= -->
 
-<section class="cta">
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white py-24">
 
-<div class="container">
+<div class="max-w-5xl mx-auto text-center px-6">
 
-<h2>Ready to Start Your Project?</h2>
+<h2 class="text-5xl font-bold mb-6">
 
-<p>
+Ready To Start Your Project?
 
-Let's work together to build a modern,
-fast and professional digital solution.
+</h2>
+
+<p class="text-lg mb-10">
+
+Let's work together and build something amazing for your business.
 
 </p>
 
-<a href="contacts.html" class="btn">
+<a href="contacts.html"
 
-Contact Us Today
+class="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 duration-300">
+
+Get Started
 
 </a>
 
@@ -479,68 +640,93 @@ Contact Us Today
 
 </section>
 
-</main>
-
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="bg-slate-900 text-white py-16">
 
-<div class="container footer-container">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-<div class="footer-column">
+<div>
 
-<h3>TechNova Solutions</h3>
+<h3 class="text-2xl font-bold mb-4">
 
-<p>
+TechNova Solutions
 
-Providing modern web, mobile,
-cloud and digital solutions.
+</h3>
+
+<p class="text-gray-400">
+
+Providing innovative web development, mobile apps, cloud computing and digital marketing services.
 
 </p>
 
 </div>
 
-<div class="footer-column">
+<div>
 
-<h3>Quick Links</h3>
+<h3 class="text-xl font-semibold mb-4">
 
-<a href="home.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contacts.html">Contact</a>
+Quick Links
 
-</div>
+</h3>
 
-<div class="footer-column">
+<ul class="space-y-2">
 
-<h3>Our Services</h3>
+<li><a href="home.html" class="hover:text-cyan-400">Home</a></li>
 
-<a href="#">Web Development</a>
-<a href="#">Mobile Apps</a>
-<a href="#">Cloud Solutions</a>
-<a href="#">Digital Marketing</a>
+<li><a href="about.html" class="hover:text-cyan-400">About</a></li>
 
-</div>
+<li><a href="services.html" class="text-cyan-400">Services</a></li>
 
-<div class="footer-column">
+<li><a href="contacts.html" class="hover:text-cyan-400">Contact</a></li>
 
-<h3>Contact</h3>
-
-<p>📍 Lahore, Pakistan</p>
-<p>📞 +92 300 1234567</p>
-<p>✉ info@technova.com</p>
+</ul>
 
 </div>
 
+<div>
+
+<h3 class="text-xl font-semibold mb-4">
+
+Our Services
+
+</h3>
+
+<ul class="space-y-2 text-gray-400">
+
+<li>Web Development</li>
+
+<li>Mobile Applications</li>
+
+<li>Cloud Solutions</li>
+
+<li>Cyber Security</li>
+
+</ul>
+
 </div>
 
-<div class="footer-bottom">
+<div>
 
-<p>
+<h3 class="text-xl font-semibold mb-4">
+
+Contact Us
+
+</h3>
+
+<p class="text-gray-400">📍 Lahore, Pakistan</p>
+
+<p class="text-gray-400 mt-2">📞 +92 300 1234567</p>
+
+<p class="text-gray-400 mt-2">✉ info@technova.com</p>
+
+</div>
+
+</div>
+
+<div class="border-t border-slate-700 mt-12 pt-6 text-center text-gray-400">
 
 © 2026 TechNova Solutions. All Rights Reserved.
-
-</p>
 
 </div>
 
